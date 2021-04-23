@@ -6,12 +6,32 @@
 				text-align: center;
 				font-family: apple;
 			}
+			input[type=text], input[type=password] {
+ 			width: 100%;
+ 			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			box-sizing: border-box;
+			}
+			input[type="submit"] {
+  			background-color: #4CAF50;
+  			color: white;
+  			padding: 14px 20px;
+  			margin: 8px 0;
+  			border: none;
+  			cursor: pointer;
+  			width: 100%;
+			}
+			input[type="submit"]:hover {
+  			opacity: 0.8;
+			}
 		</style>
 	</head>
 	<body>
-		<form action="/dashboard" method="post">
+		<form action="/dashboard" method="get">
 		E-mail: <input type="text" name="email"><br>
-		Password: <input type="text" name="password"><br>
+		Password: <input type="password" name="password"><br>
 		<input type="submit">
 		</form>
 	</body>
